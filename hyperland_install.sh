@@ -2,12 +2,11 @@ git clone https://github.com/hyprwm/Hyprland/releases/download/v0.22.0beta/v0.22
 tar xvzf v0.22.0beta.tar.gz
 cd hyprland
 sudo cp libwlroots.so.12032 /usr/lib
-sudo apt-get install xutils-dev xcb-proto libtoool pkg-config depcompsudo git libOpenGl libopengl-dev libvulkan-dev libseat-dev libxcb-render-util0-dev libxcb-xinput-dev libxcb-composite0-dev libxcb-res0-dev automake autoconf make
+sudo apt-get install xutils-dev xcb-proto libtoool pkg-config git libopengl-dev libvulkan-dev libseat-dev libxcb-render-util0-dev libxcb-xinput-dev libxcb-composite0-dev libxcb-res0-dev automake autoconf make
 
 git clone https://gitlab.freedesktop.org/xorg/lib/libxcb-errors.git
 cd libxcb-errors
 git submodule update --init
-./configure
 aclocal
 autoconf
 automake
