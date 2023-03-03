@@ -26,3 +26,7 @@ mkdir /usr/share/wayland-sessions/
 cp hyprland.desktop /usr/share/wayland-sessions/
 mkdir ~/.config/hypr
 cp hyprland.conf ~/.config/hypr
+
+cd ..
+sudo cp Hyprland /usr/bin/
+sudo cp hyprctl /usr/bin/
